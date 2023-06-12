@@ -54,7 +54,7 @@ class _ExpensesState extends State<Expenses> {
     ScaffoldMessenger.of(context).clearSnackBars();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        duration: Duration(seconds: 3),
+        duration: const Duration(seconds: 3),
         content: const Text('Expense deleted'),
         action: SnackBarAction(
           label: 'Undo',
@@ -71,7 +71,7 @@ class _ExpensesState extends State<Expenses> {
   @override
   Widget build(context) {
     final width = MediaQuery.of(context).size.width;
-    final heigth = MediaQuery.of(context).size.height;
+    // final heigth = MediaQuery.of(context).size.height;
 
     Widget mainContent = const Center(
       child: Text('No Expenses found. Start adding some!'),
